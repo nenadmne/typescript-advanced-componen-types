@@ -8,10 +8,10 @@ function App() {
       <Input id="1" label="Input field" type="text" disabled={true} />
       <Input id="2" label="Another input field" type="text" disabled={true} />
       <p>
-        <Button el="anchor"> Link </Button>
+        <Button> Button </Button>
       </p>
       <p>
-        <Button el="button"> Button </Button>
+        <Button href="https://google.com">Link</Button>
       </p>
     </>
   );
