@@ -1,15 +1,26 @@
 import Input from "./components/Input";
 import Button from "./components/button";
 import Container from "./components/container";
+import Form from "./components/Form";
 
 function App() {
+  const saveHandler = (data: unknown) => {
+    const extractedData = data as {
+      name: string;
+      surname: string;
+    };
+    console.log(extractedData);
+  };
   return (
     <main>
-      <Input id="1" label="Input field" type="text" disabled={true} />
-      <Input id="2" label="Another input field" type="text" disabled={true} />
-      <p>
-        <Button> Button </Button>
-      </p>
+      <Form onSave={saveHandler}>
+        <Input id="name" label="Enter name" type="text" />
+        <Input id="surname" label="Enter surname" type="text" />
+        <p>
+          <Button> Save </Button>
+        </p>
+      </Form>
+
       <p>
         <Button href="https://google.com">Link</Button>
       </p>
