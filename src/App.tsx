@@ -1,6 +1,6 @@
 import Input from "./components/Input";
-import Button from "./components/button";
-import Container from "./components/container";
+import Button from "./components/Button";
+import Container from "./components/Container";
 import Form from "./components/Form";
 
 function App() {
